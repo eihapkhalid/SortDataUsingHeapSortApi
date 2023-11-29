@@ -27,6 +27,10 @@ namespace SortDataUsingHeapSortApi.Controllers
             var data = _unitOfWork.TbSensorDataSampleRepository.GetAll().ToList();
             _SortDataService.HeapSort(data);
 
+            if(data == null)
+            {
+                return BadRequest(string.Empty);
+            }
             // إرجاع استجابة مناسبة
             return Ok(data);
         }
