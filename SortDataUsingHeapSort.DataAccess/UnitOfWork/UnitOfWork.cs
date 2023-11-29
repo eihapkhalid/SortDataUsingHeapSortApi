@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace SortDataUsingHeapSort.DataAccess.UnitOfWork
 {
-    public class UnitOfWork
+    public class UnitOfWork : IUnitOfWork
     {
         #region dependency injection
         private HeapSortDbContext _db;
