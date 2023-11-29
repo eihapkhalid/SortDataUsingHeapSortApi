@@ -17,10 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\SortDataUsingHeapSort.DataAccess\SortDataUsingHeapSort.DataAccess.csproj" />
     <ProjectReference Include="..\SortDataUsingHeapSort.Models\SortDataUsingHeapSort.Models.csproj" />
   </ItemGroup>
