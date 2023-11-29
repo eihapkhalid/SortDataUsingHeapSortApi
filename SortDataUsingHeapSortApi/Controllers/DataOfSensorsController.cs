@@ -18,7 +18,7 @@ namespace SortDataUsingHeapSortApi.Controllers
         #endregion
 
         #region Post Creat SensorData
-        [HttpPost("PostSensorData")]
+        [HttpPost("AddSensorData")]
         public IActionResult PostSensorData([FromBody] TbSensorDataSample model)
         {
             try

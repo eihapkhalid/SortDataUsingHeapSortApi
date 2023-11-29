@@ -21,7 +21,7 @@ namespace SortDataUsingHeapSortApi.Controllers
         #endregion
 
         #region Sort Data By Heap Sorting
-        [HttpGet("SortEmployeesByAge")]
+        [HttpGet("SortDataByHeap")]
         public IActionResult SortData()
         {
             var data = _unitOfWork.TbSensorDataSampleRepository.GetAll().ToList();
