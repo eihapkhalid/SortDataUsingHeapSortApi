@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using SortDataUsingHeapSort.DataAccess.Data;
 using SortDataUsingHeapSort.DataAccess.UnitOfWork;
+using SortDataUsingHeapSortApi.Utilities;
 using System.Text;
 
 namespace SortDataUsingHeapSortApi
@@ -56,6 +57,10 @@ namespace SortDataUsingHeapSortApi
 
             #region UnitOfWork
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+            #endregion
+
+            #region SortDataService
+            builder.Services.AddScoped<SortDataService>();
             #endregion
 
             var app = builder.Build();
