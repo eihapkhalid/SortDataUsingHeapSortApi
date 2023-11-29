@@ -18,8 +18,4 @@
     <ProjectReference Include="..\SortDataUsingHeapSort.Models\SortDataUsingHeapSort.Models.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="UnitOfWork\" />
-  </ItemGroup>
-
 </Project>
